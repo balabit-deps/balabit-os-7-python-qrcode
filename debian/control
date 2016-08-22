@@ -1,0 +1,54 @@
+Source: python-qrcode
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Hans-Christoph Steiner <hans@eds.org>,
+           Timo Aaltonen <tjaalton@debian.org>,
+           Hugo Lefeuvre <hle@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all,
+               python-setuptools,
+               python3-all,
+               python3-setuptools,
+Standards-Version: 3.9.8
+XS-Python-Version: >= 2.6
+Homepage: https://pypi.python.org/pypi/qrcode/
+Vcs-Git: https://anonscm.debian.org/git/python-modules/packages/python-qrcode.git
+Vcs-Browser: https://anonscm.debian.org/cgit/python-modules/packages/python-qrcode.git
+
+Package: python-qrcode
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-pil,
+         python-six
+Description: QR Code image generator library - Python 2.7
+ This package provides a pure Python QR Code generator module. It uses 
+ the Python Imaging Library (PIL) to allow for the generation of QR Codes.
+ In contrast to the python-qrencode module this module does not need
+ an additional C library.
+ .  
+ In addition this package provides a command line tool to generate QR
+ codes and either write these QR codes to a file or do the output
+ as ascii art at the console.
+ .
+ This package provides the Python 2.7 module.
+
+Package: python3-qrcode
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-pil,
+         python3-six
+Description: QR Code image generator library - Python 3.x
+ This package provides a pure Python QR Code generator module. It uses 
+ the Python Imaging Library (PIL) to allow for the generation of QR Codes.
+ In contrast to the python-qrencode module this module does not need
+ an additional C library.
+ .  
+ In addition this package provides a command line tool to generate QR
+ codes and either write these QR codes to a file or do the output
+ as ascii art at the console.
+ .
+ This package provides the Python 3.x module.
